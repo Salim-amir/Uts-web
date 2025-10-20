@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
-ini_set('display_errors', 0);
-
 $conn = pg_connect("host=localhost dbname=limstore_db user=postgres password=55667788");
 if (!$conn) {
     die("<h2 style='color:red;text-align:center;'>❌ Gagal konek ke PostgreSQL</h2>");
